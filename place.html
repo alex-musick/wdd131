@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather: WDD131 Week 03</title>
+</head>
+<body>
+    <header>
+        <h1>St. Louis</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width:500px)" srcset="images/st-louis-small.webp">
+            <img src="images/st-louis-large.webp" alt="St. Louis">
+        </picture>
+        <section id="city-data">
+            <h2>Data</h2>
+            <p id="area-line">Area: 61.75 sq mi</p>
+            <p id="population-line">Population: 301,578</p>
+            <p id="timezone-line">Time Zone: CDT (UTC-5)</p>
+            <p id="area-code-line">Area Code: 314</p>
+            <p id="zip-codes-line">Zip Code: 63101</p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2><p id="weather-emoji">⛅</p>
+            <img src="images/weather-icon.svg" alt="Weather Icon">
+            <p id="tempature-line">Temperature: 69</p>
+            <p id="conditions-line">Conditions: Cloudy</p>
+            <p id="wind-line">Wind: 8</p>
+            <p id="chill-line">Wind Chill: </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright (C)
+            <span id="currentyear"></span>
+            Alex Musick - 
+            Idaho
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

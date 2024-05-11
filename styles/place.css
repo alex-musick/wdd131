@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: navy;
+}
+
+header {
+    background-color: #d20034;
+    color: #FFFFFF;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+    color: yellow;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 1em;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    align-self: center;
+}
+
+#weather img {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+footer {
+    background-color: #d20034;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    padding: 5px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+main picture img {
+    width: 99vw;
+    height: 500px;
+    object-fit: cover;
+}
+
+#weather-emoji {
+    display: none;
+}
