@@ -97,6 +97,8 @@ const newButton = document.getElementById("new-button");
 const largeButton = document.getElementById("large-button");
 const smallButton = document.getElementById("small-button");
 
+createTempleCards(temples);
+
 homeButton.addEventListener("click", () => {
 	createTempleCards(temples);
 })
