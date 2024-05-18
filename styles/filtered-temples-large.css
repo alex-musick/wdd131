@@ -1,0 +1,52 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    header h1 {
+        margin-left: 10px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    nav a {
+        flex: auto;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    #temple-pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #temple-pictures section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #DDD;
+        width: 31vw;
+        height: auto;
+    }
+    
+    #temple-pictures section img {
+        margin: 10px;
+        filter: drop-shadow(0 0 0.75rem);
+        width: 80%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav a {
+        display:block;
+    }
+}
