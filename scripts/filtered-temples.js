@@ -99,28 +99,35 @@ const smallButton = document.getElementById("small-button");
 
 createTempleCards(temples);
 
+const selectionTitle = document.getElementById("selection-title");
+
 homeButton.addEventListener("click", () => {
 	createTempleCards(temples);
+	selectionTitle.textContent = "Home";
 })
 
 oldButton.addEventListener("click", () => {
 	let filteredTemples = temples.filter(temple => Number(temple.dedicated.split(",")[0]) < 1900);
 	createTempleCards(filteredTemples);
+	selectionTitle.textContent = "Old";
 })
 
 newButton.addEventListener("click", () => {
 	let filteredTemples = temples.filter(temple => Number(temple.dedicated.split(",")[0]) > 2000);
 	createTempleCards(filteredTemples);
+	selectionTitle.textContent = "New";
 })
 
 largeButton.addEventListener("click", () => {
 	let filteredTemples = temples.filter(temple => temple.area > 90000);
 	createTempleCards(filteredTemples);
+	selectionTitle.textContent = "Large";
 })
 
 smallButton.addEventListener("click", () => {
 	let filteredTemples = temples.filter(temple => temple.area < 10000);
 	createTempleCards(filteredTemples);
+	selectionTitle.textContent = "Small";
 })
 
 function createTempleCards (temples) {
