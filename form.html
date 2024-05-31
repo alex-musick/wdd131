@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get"  action="review.html">
+            <label for="product-selector">Product Name</label>
+            <select name="product" id="product-selector" required>
+                <option disabled selected value>Choose a Product...</option>
+            </select>
+            <br>
+            <p>Overall Rating</p>
+            <div id="rating-buttons">
+                <input type="radio" name="rating" id="rating-button" required>☆</input>
+                <input type="radio" name="rating" id="rating-button" required>☆☆</input>
+                <input type="radio" name="rating" id="rating-button" required>☆☆☆</input>
+                <input type="radio" name="rating" id="rating-button" required>☆☆☆☆</input>
+                <input type="radio" name="rating" id="rating-button" required>☆☆☆☆☆</input>
+            </div>
+
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <p>Which features did you find useful in the product?<br>(Check all that apply)</p>
+            <div id="useful-features">
+                <label for="durability"><input type="checkbox" id="durability" name="durability">Durability</label>
+                <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="ease-of-use">Ease of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance">Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="design">Design</label>
+            </div>
+
+            <label for="review-box">Written Review (optional)</label>
+            <textarea id="review-box" name="review"></textarea>
+
+            <label for="user-name">Your Name (optional)</label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" value="Post Review"></input>
+        </form>
+    </main>
+    <footer>
+    <p>
+        Copyright (C)
+        <span id="currentyear"></span>
+        Alex Musick - 
+        Idaho
+    </p>
+    <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

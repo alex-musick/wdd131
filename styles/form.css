@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #4062BB;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 99vw;
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    align-self: center;
+    color: #FFF;
+}
+
+/* Form Section */
+
+
+main form {
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+    gap: 5px;
+    background-color: #DDD;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main form p {
+    margin-top: 20px;
+}
+
+main form select {
+    height: 50px;
+}
+
+main form input {
+    height: 50px;
+}
+
+main form textarea {
+    height: 200px;
+}
+
+main form label, main form p {
+    font-size: 1.3em;
+}
+
+#rating-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#rating-buttons input {
+    margin-left: 15px;
+}
+
+#useful-features {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#useful-features input {
+    width: 50px;
+    vertical-align: middle;
+}
+
+main form input[type="submit"] {
+    font-size: 1.5em;
+}
+
+
+/* End Form Section */
+
+footer {
+    background-color: #4062BB;
+    margin-top: 50px;
+    padding: 0;
+    height: 100px;
+    width: 100vw;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: #CCCCCC;
+}
