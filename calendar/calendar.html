@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/calendar.css">
+    <script src="scripts/calendar.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Dumb Calendar</title>
+</head>
+<body>
+    <header>
+        <h1>Dumb Calendar</h1>
+        <nav>
+            <a href="calendar.html">Calendar</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="viewer">
+            <h3>Active Date:</h3>
+            <input type="date" id="date-selector">
+            <textarea id="day-content"></textarea>
+            <button type="button" id="save-button">Save Contents</button>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright (C)
+            <span id="currentyear"></span>
+            Alex Musick - 
+            Idaho
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
